@@ -11,14 +11,32 @@ Attributes:
 2.String name
 3.String email
 4.String password
+5.int capacity//number of books could be borrowed now
 
 Functions:
 1.String search()
 By author; By call number; By title
 2.boolean borrow()
-3.boolean return()
-4.String showRecord()
+3.String showRecord()
 return record of the user
+
+Librarian:
+UI
+Attributes:
+1.String id
+2.String password
+
+Functions:
+1.boolean borrow()
+2.boolean return()
+3.String showRecord()
+//all borrow and return records of a user
+return record of a user
+4.String showUnreturned()
+//that are borrowed within a period
+return title+date+userID
+5.boolean sendEmail()
+//to those who should return the book already
 
 
 Administrator:
@@ -31,13 +49,7 @@ Functions:
 1.boolean create()
 2.boolean delete()
 3.boolean load()
-4.String showRecord(id)
-//all borrow and return records of a user
-5.String showUnreturned()
-//that are borrowed within a period
-return title+date+userID
-6.boolean sendEmail()
-//to those who should return the book already
+4.selfdifinedCRUD()
 
 tables:
 
