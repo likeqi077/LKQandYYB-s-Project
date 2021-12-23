@@ -1,3 +1,45 @@
+UI:
+register()
+logIn()
+
+Library User:
+UI	
+Attributes:
+1.	String id
+2.	String name
+3.	String password
+4.	String address
+Functions:
+1.	search()
+By author; By call number; By title
+2.	borrow()
+3.	return()
+4.	showRecord()
+return record of the userselds
+
+
+Administrator:
+	UI
+	Attributes:
+1.	String id
+2.	String password
+
+Functions:
+1.	create()
+2.	delete()
+3.	load()
+4.	showRecord(id)
+all borrow and return records of a user
+5.	showUnreturned()
+that are borrowed within a period
+return title+date+userID
+
+Book:
+	Attributes:
+1.	static String title
+2.	static String callNumber
+3.	int copy number
+4.	
 
 
 
