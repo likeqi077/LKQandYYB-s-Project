@@ -1,4 +1,82 @@
+UI:
+register(email,id,password*2,verificationCode)
+logIn(id,password)
 
+class:
+
+Library User:
+UI	
+Attributes:
+1.String id
+2.String name
+3.String email
+4.String password
+5.int capacity//number of books could be borrowed now
+
+Functions:
+1.String search()
+By author; By call number; By title
+2.boolean borrow()
+3.String showRecord()
+return record of the user
+
+Librarian:
+UI
+Attributes:
+1.String id
+2.String password
+
+Functions:
+1.boolean borrow()
+2.boolean return()
+3.String showRecord()
+//all borrow and return records of a user
+return record of a user
+4.String showUnreturned()
+//that are borrowed within a period
+return title+date+userID
+5.boolean sendEmail()
+//to those who should return the book already
+
+
+Administrator:
+UI
+Attributes:
+1.String id
+2.String password
+
+Functions:
+1.boolean create()
+2.boolean delete()
+3.boolean load()
+4.selfdifinedCRUD()
+
+tables:
+
+Users:
+1.name
+2.email
+3.userID
+4.password
+5.capacity//number of books could borrow 
+
+
+Books:
+1.title
+2.callNumber
+3.copyNumber
+4.author
+5.publicationdate
+
+Records:
+1.callNumber
+2.copyNumber
+3.userID
+4.borrowDate
+5.returnDate
+
+
+Error handling:
 
 
 
